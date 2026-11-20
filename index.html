@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>施工工法视频 · 在线观看</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --ink:#12161c; --ink-2:#5b6472;
+    --line:#e6e8ec; --accent:#c8102e; --accent-soft:#fdeef0;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{
+    margin:0;padding:24px 16px 40px;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto}
+  header{margin-bottom:20px}
+  .kicker{
+    display:inline-flex;align-items:center;gap:6px;font-size:12px;letter-spacing:.08em;
+    color:var(--accent);background:var(--accent-soft);padding:5px 10px;border-radius:999px;font-weight:600;
+  }
+  h1{font-size:24px;line-height:1.35;margin:12px 0 6px;letter-spacing:-.01em}
+  .sub{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.6}
+  .list{margin-top:22px;display:flex;flex-direction:column;gap:14px}
+  a.card{
+    display:block;text-decoration:none;color:inherit;background:var(--card);
+    border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    transition:transform .18s ease, box-shadow .18s ease;
+    box-shadow:0 1px 2px rgba(16,24,40,.04);
+  }
+  a.card:active{transform:scale(.985)}
+  .thumb{position:relative;aspect-ratio:16/9;background:#0d1117;overflow:hidden}
+  .thumb video{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+  .play{
+    position:absolute;inset:0;display:grid;place-items:center;
+  }
+  .play span{
+    width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);
+    display:grid;place-items:center;box-shadow:0 4px 16px rgba(0,0,0,.28);
+  }
+  .play span::after{
+    content:"";display:block;width:0;height:0;margin-left:4px;
+    border-left:15px solid #c8102e;border-top:9px solid transparent;border-bottom:9px solid transparent;
+  }
+  .meta{padding:14px 16px 16px}
+  .meta h2{font-size:16px;margin:0 0 5px;line-height:1.4}
+  .meta p{margin:0;font-size:12.5px;color:var(--ink-2);line-height:1.55}
+  .tags{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+  .tag{font-size:11.5px;color:var(--ink-2);background:#f2f4f7;border-radius:6px;padding:3px 7px}
+  footer{margin-top:26px;text-align:center;font-size:12px;color:#9aa3af;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">施工工法 · 视频库</div>
+    <h1>扫码即可在线观看</h1>
+    <p class="sub">共 2 个视频，点击卡片直接播放，支持手机全屏观看。</p>
+  </header>
+
+  <div class="list">
+    <a class="card" href="road.html">
+      <div class="thumb">
+        <video src="videos/road-construction.mp4#t=3" preload="metadata" muted playsinline></video>
+        <div class="play"><span></span></div>
+      </div>
+      <div class="meta">
+        <h2>道路工程施工工法</h2>
+        <p>中英双语讲解，覆盖道路施工主要工序与工艺要点。</p>
+        <div class="tags"><span class="tag">中英双语</span><span class="tag">道路工程</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="fire.html">
+      <div class="thumb">
+        <video src="videos/fire-pipeline.mp4#t=3" preload="metadata" muted playsinline></video>
+        <div class="play"><span></span></div>
+      </div>
+      <div class="meta">
+        <h2>消防管道施工工法</h2>
+        <p>60 秒快速了解消防管道安装流程与关键控制点。</p>
+        <div class="tags"><span class="tag">消防管道</span><span class="tag">60 秒</span></div>
+      </div>
+    </a>
+  </div>
+
+  <footer>建议在 Wi-Fi 环境下观看<br>视频仅供学习交流使用</footer>
+</div>
+</body>
+</html>
